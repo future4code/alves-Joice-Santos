@@ -19,7 +19,29 @@ if(confirm("Quer iniciar uma nova rodada?")) {
    console.log("O jogo acabou")
 }
 
-const rodada1 = {
-const carta = comprarCarta()*2
-const pontuação = soma(carta)
-console.log(`Usuário - cartas ${carta} - pontuação ${pontuação}`)
+function cartasUsuario(){
+const carta1= comprarCarta()
+const carta2= comprarCarta()
+const pontuacaoUsuario= (carta1.valor + carta2.valor)
+console.log(`Usuário - cartas: ${carta1.texto} ${carta2.texto} - pontuação ${pontuacaoUsuario}`)
+}
+cartasUsuario()
+
+function cartasComputador(){
+   const cartaComp1= comprarCarta()
+   const cartaComp2= comprarCarta()
+   const pontuacaoComp= (cartaComp1.valor + cartaComp2.valor)
+   console.log(`Computador - cartas: ${cartaComp1.texto} ${cartaComp2.texto} - pontuação ${pontuacaoComp} `)
+}
+cartasComputador()
+
+function vencedor(pontuacaoUsuario, pontuacaoComp){
+   if (pontuacaoUsuario > pontuacaoComp){
+      console.log("O usuário ganhou!");
+   } else if(pontuacaoUsuario = pontuacaoComp){
+      console.log("Empate!");
+   } else {
+      console.log("O computador ganhou!");
+   }
+}
+vencedor()
