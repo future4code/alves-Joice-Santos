@@ -48,8 +48,10 @@ return numElevados
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+var m = Math.max.apply(null, array);
+return(m)
 }
+retornaMaiorNumero(array)
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
