@@ -29,12 +29,21 @@ function retornaNumerosPares(array) {
       return numero % 2 === 0
     })
     return(numerosPares)
-}
-retornaNumerosPares(array)
+  }
+
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+ const numerosPares = array.filter((numero) => {
+   return numero % 2 === 0
+ })
+let numElevados = []
+let numMultiplicados = []
+for(let i = 0; i< numerosPares.length; i++){
+  numMultiplicados = numerosPares[i] ** 2
+  numElevados.push(numMultiplicados)
+}
+return numElevados
 }
 
 // EXERCÍCIO 06
