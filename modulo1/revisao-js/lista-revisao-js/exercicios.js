@@ -55,13 +55,23 @@ retornaMaiorNumero(array)
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-
+const maiorNumero = (num1, num2) => {
+  if (num1 > num2) {
+    return num1
+  } else {
+    return num2
+  }
+}
 }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
-}
+   let numeros = []
+   for(let i = 0; numeros.length < n; i+= 2) {
+     numeros.push(i)
+   }
+   return numeros
+} 
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
