@@ -1,0 +1,29 @@
+.videos{
+    margin: 0;
+    padding: 0;
+}    
+
+body > div{ 
+   display: grid; 
+   width: 100%;
+   min-height: 100vh;
+   grid-template-rows: repeat(2, 100px);
+   row-gap: 20px;
+   column-gap: 10px;
+   grid-template-areas: 'head head head head'
+                        'video1 video2 video3 video4'
+                        'video5 video6 video7 video8'
+                        'main main main main'
+                        'foot foot foot foot';
+
+}
+
+header{
+    grid-template-columns: repeat(4, 100px);
+    align-items: center;
+    justify-items: start;
+}
+
+footer{
+    border: 1px gray;
+}
