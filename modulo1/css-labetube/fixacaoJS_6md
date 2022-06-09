@@ -1,0 +1,5 @@
+```
+   const tarefasConcluidas = tarefas.filter(({status}) =>
+      status === "done").map((item) => item.titulo)
+      return tarefasConcluidas
+```
