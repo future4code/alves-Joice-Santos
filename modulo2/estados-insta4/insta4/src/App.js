@@ -10,29 +10,29 @@ const MainContainer = styled.div`
 `
 
 class App extends React.Component {
-  render() {
-    return (
-      <MainContainer>
-        <Post
+  state = {
+
+  posts: [
+      {
           nomeUsuario={'paulinha'}
           fotoUsuario={'https://picsum.photos/50/50'}
           fotoPost={'https://picsum.photos/200/150'}
-        />
+      },
 
-        <Post
+      {
           nomeUsuario={'Luke'}
           fotoUsuario={'https://picsum.photos/id/1/50/50'}
           fotoPost={'https://picsum.photos/id/1025/200/150'}
-        />
+      },
 
-        <Post
+      {
           nomeUsuario={'Leia'}
           fotoUsuario={'https://picsum.photos/id/1027/50/50'}
           fotoPost={'https://picsum.photos/id/1037/200/150'}
-        />
+      }
 
-      </MainContainer>
-    );
+    
+  ],
   }
 }
 
