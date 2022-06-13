@@ -1,26 +1,11 @@
 import React from "react";
 import './App.css';
+import './mensagens';
 
-/*
-export default class Whatslab extends React.Component {
-  state = {
-    usuario: "",
-    msg: ""
-  };
-
-    adicionaUsuario = (event) => {
-      this.setState({ u: event.target.value });
-    };
-    adicionaMsg = (event) => {
-      const mensagem = event.target.value;
-      this.setState({ idade: idade });
-    };
-  }
+export default function App() {
+  return (
+    <>
+    <mensagens />
+    </>
+  );
 }
-*/
-
-return (
-  <div>
-    <h1> Whatslab</h1>
-  </div>
-)
