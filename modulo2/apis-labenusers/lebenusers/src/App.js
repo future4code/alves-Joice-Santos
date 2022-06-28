@@ -1,14 +1,14 @@
 import React from "react";
 import axios from "axios";
+import TelaCadastro from "./componentes/TelaCadastro";
+import TelaListaUsuarios from "./componentes/TelaListaUsuarios";
 
 export default class App extends React.Component{
   state = {
-    usuarios: [],
-    erro: "",
-    criarUsuario: ""
+    telaAtual: "cadastro"
   };
 
-  componentDidMount() {
+ /* componentDidMount() {
     this.pegarUsuario();
   }
 
@@ -50,7 +50,7 @@ export default class App extends React.Component{
 
 onChangeUsuario = (e) => {
   this.setState({criarUsuario: e.target.value});
-};
+}; 
 
   render() {
     return <main>
@@ -64,5 +64,13 @@ onChangeUsuario = (e) => {
   })
 }
     </main>
-  };
+  }; */
+  render(){
+    return(
+      <div>
+        <TelaCadastro />
+        <TelaListaUsuarios />
+      </div>
+    )
+  }
 }
