@@ -12,9 +12,9 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
+                <Route index element={<RecipeList/>} />
                 <Route path="login" element={ <Login/>} />
                 <Route path="cadastro" element={<SignUp/>} />   
-                <Route index element={<RecipeList/>} />
                 <Route path="adicionar-receita" element={<AddRecipe/>} />      
                 <Route path="detalhe/:id" element={<RecipeDetail/>} />
                 <Route path="*" element={<ErrorPage />} />     
