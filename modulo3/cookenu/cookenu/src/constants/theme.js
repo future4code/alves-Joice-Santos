@@ -5,7 +5,7 @@ const theme = createTheme({
     palette: {
         primary: {
             main: colorOne,
-            contrastText: "black"
+            contrastText: "#82EEFD"
         },
         text: {
             primary: colorTwo

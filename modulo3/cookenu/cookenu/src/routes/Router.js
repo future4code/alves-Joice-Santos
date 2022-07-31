@@ -1,6 +1,6 @@
-import { Error } from "@material-ui/icons";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "../components/Header";
 import AddRecipe from "../pages/AddRecipes/AddRecipes";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Login from "../pages/Login/Login";
@@ -11,6 +11,7 @@ import SignUp from "../pages/SignUp/SignUp";
 const Router = () => {
     return (
         <BrowserRouter>
+            <Header />
             <Routes>
                 <Route index element={<RecipeList/>} />
                 <Route path="login" element={ <Login/>} />

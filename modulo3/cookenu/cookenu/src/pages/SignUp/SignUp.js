@@ -1,10 +1,15 @@
 import React from "react";
+import FormSignUp from "../SignUp/FormSignUp"
+import { MainContainer, } from "./styled"
+import useUnprotected from "../../hooks/useUnprotected"
 
 const SignUp = () => {
+    useUnprotected()
+    
     return (
-        <div>
-            <h1>SignUp</h1>
-        </div>
+        <MainContainer>
+            <FormSignUp />
+        </MainContainer>
     )
 }
 

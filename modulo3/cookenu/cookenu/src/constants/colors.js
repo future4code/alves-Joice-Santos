@@ -1,2 +1,2 @@
 export const colorOne = "#FF6978"
-export const colorTwo = "#FFFCF9"
+export const colorTwo = "#080d2b"
