@@ -1,22 +1,20 @@
 import { Request, Response } from "express";
-import { updateUser } from './data/UpdateUser'
+import updateUser from './data/UpdateUser'
 
 
 
 export default async function editUser(req: Request, res: Response) {
     try {
-        const id: string =  req.params.id
-
-        const { name, nickname, email }: updateUser = req.body
-
-        if (name === '' || nickname === '' || email === '') {
-            throw new Error(`Nenhum dos campos podem estar em branco.`)
+        if (req.body.name === '' || req.body.nickname === '' || req.body.email === '') {
+            res.status(400).send({message:"Nenhum dos campos podem estar em branco."})
         }
 
-        if (!name && !nickname && !email) {
-            throw new Error(`preencha os campos`)
+        if (!req.body.name && !req.body.nickname && !req.body.email) {
+            res.status(400).send({message: "preencha os campos"})
         }
-        await updateUser(id, updateUser)
+        await updateUser(
+            req.body.name | req.body.nickname | req.body.email
+        )
 
         res.status(200).send({message:`Usuário Atualizado`})
         
