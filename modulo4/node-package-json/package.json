@@ -1,0 +1,21 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "aula de fixação de criação de package.json e utilização do node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "aula",
+    "package.json",
+    "node"
+  ],
+  "author": "Joice Santos",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^18.7.0"
+  },
+  "devDependencies": {}
+}
