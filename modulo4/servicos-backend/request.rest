@@ -1,0 +1,6 @@
+GET http://localhost:3003/adress
+
+###
+
+POST http://localhost:3003/adress/info
+Content-Type: application/json
