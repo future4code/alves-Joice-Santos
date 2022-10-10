@@ -1,0 +1,7 @@
+export const colorHome = "#FFA500"
+export const colorDiadeSorte = "#BFAF83"
+export const colorLotofacil = "#DD7AC6"
+export const colorLotomania = "#FFAB64"
+export const colorMegasena = "#6BEFA3"
+export const colorQuina = "#8666EF"
+export const colorTimemania = "#5AAD7D"
