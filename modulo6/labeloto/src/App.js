@@ -1,11 +1,14 @@
 import React from "react"
+import Router from "./routes/Router"
+
+
 
 function App() {
   return (
     <div>
-      LABELOTO 
+      <Router/>
     </div>
-  );
+  )
 }
 
 export default App
